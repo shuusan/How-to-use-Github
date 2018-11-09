@@ -21,6 +21,15 @@ git log
 //commitしたか、addしたか確認  
 git status  
 
+//階層構造の確認
+ls
+
+//ファイルに入る
+cd ファイル名
+
+//ファイルからでる
+../
+
 ## 3. ブランチ  
 //ローカルブランチの一覧  
 git branch  
@@ -39,10 +48,16 @@ git branch -D (ブランチ名)
 
 ## 4.共同開発  
 //相手のリポジトリのコピー  
-git clone  
+git clone  (コピー元URL)
 
 //相手のリポジトリの更新差分の受け取り  
-git pull  
+git pull 
+
+//リポジトリの更新差分の取得
+git fetch
+
+//現在ブランチとブランチを結合する
+git merge (結合ブランチ名)
 
 ※masterブランチでpullするときは作業中のブランチをコミットしてからmasterブランチに切り替える  
 ※masterにpullするとほかのブランチも更新される。  
